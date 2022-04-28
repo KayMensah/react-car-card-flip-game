@@ -19,10 +19,12 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
+  // const [showModal, setShowModal] = useState(true);
+  // const [showModal, setShowModal] = useState(true);
 
   //function that shuffle the cards
 
-  const shuffleCards = () => {
+  function shuffleCards() {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
@@ -31,7 +33,7 @@ function App() {
     setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
-  };
+  }
 
   //handle a choice
 
