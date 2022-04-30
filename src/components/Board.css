@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lora:ital,wght@0,400;1,500&family=Roboto:wght@100;400&family=Source+Serif+Pro:wght@700&family=Work+Sans&display=swap");
+
+* > * {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  text-align: center;
+}
+
+.board .leaderboard {
+  margin-bottom: 1rem;
+}
+.board .duration {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#profile .flex.item {
+  display: flex;
+  align-items: center;
+}
+
+#profile .flex img {
+  width: 20%;
+  border-radius: 70%;
+}
+#profile.flex.info {
+  padding: 1rem;
+}
+
+.text-dark {
+  color: violet;
+}

@@ -3,7 +3,11 @@ import { React } from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
 import SingleCard from "./components/SingleCard";
-
+import Board from "./components/Board";
+import Profiles from "./components/Profiles";
+import Leaderboard from "./components/Database";
+// import Modal from "./components/Modal";
+import "./components/Board.css";
 const cardImages = [
   { src: "/img/amg2.png", matched: false },
   { src: "/img/audi.png", matched: false },
@@ -95,6 +99,10 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      <br />
+      <br />
+      <Board />
+      {/* <Modal /> */}
     </div>
   );
 }
